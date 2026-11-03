@@ -1,0 +1,17 @@
+[package]
+name = "dualcraft"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "dualcraft"
+path = "src/main.rs"
+
+[dependencies]
+common = { path = "../common" }
+protocol-java = { path = "../protocol-java" }
+protocol-bedrock = { path = "../protocol-bedrock" }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
